@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BandVibe - Official Music Band</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+header {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+nav {
+  background-color: #34495e;
+  text-align: center;
+  padding: 10px;
+}
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+section {
+  padding: 20px;
+}
+.grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 250px;
+  margin: 15px;
+  text-align: center;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.card img {
+  width: 200px;
+  height: 130px;
+  border-radius: 5px;
+}
+.card h3 {
+  margin: 10px 0;
+  color: #2c3e50;
+}
+.card p {
+  line-height: 1.3;
+}
+button {
+  background-color: #e67e22;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #d35400;
+}
+footer {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>BandVibe</h1>
+  <p>Feel the rhythm, live the vibe</p>
+</header>
+
+<nav>
+  <a href="#music">Music Player</a>
+  <a href="#tour">Tour Dates</a>
+  <a href="#store">Merchandise</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<main>
+<!-- Music Player Section -->
+<section id="music">
+  <h2>Listen to Our Tracks</h2>
+  <audio controls>
+    <source src="C:\\Users\\azaan\\Desktop\\College Acad\\Web Dev\\Experiments\\band\\track1.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</section>
+
+<!-- Tour Dates Section -->
+<section id="tour">
+  <h2>Upcoming Tour Dates</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Delhi Concert</h3>
+      <p>Date: 10 Dec 2025</p>
+      <p>Venue: Jawaharlal Nehru Stadium</p>
+      <button onclick="bookTicket('Delhi Concert')">Book Ticket</button>
+    </div>
+    <div class="card">
+      <h3>Mumbai Live</h3>
+      <p>Date: 20 Dec 2025</p>
+      <p>Venue: NSCI Dome</p>
+      <button onclick="bookTicket('Mumbai Live')">Book Ticket</button>
+    </div>
+    <div class="card">
+      <h3>Bangalore Jam</h3>
+      <p>Date: 5 Jan 2026</p>
+      <p>Venue: Palace Grounds</p>
+      <button onclick="bookTicket('Bangalore Jam')">Book Ticket</button>
+    </div>
+  </div>
+</section>
+
+<!-- Merchandise Store Section -->
+<section id="store">
+  <h2>Merchandise Store</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="C:\\Users\\azaan\\Desktop\\College Acad\\Web Dev\\Experiments\\mus web\\t.jpeg" alt="Band T-Shirt">
+      <h3>Band T-Shirt</h3>
+      <p>₹799</p>
+      <button onclick="buyItem('Band T-Shirt')">Buy Now</button>
+    </div>
+    <div class="card">
+      <img src="C:\\Users\\azaan\\Desktop\\College Acad\\Web Dev\\Experiments\\mus web\\c.jpeg" alt="Band Cap">
+      <h3>Band Cap</h3>
+      <p>₹499</p>
+      <button onclick="buyItem('Band Cap')">Buy Now</button>
+    </div>
+    <div class="card">
+      <img src="C:\\Users\\azaan\\Desktop\\College Acad\\Web Dev\\Experiments\\mus web\\p.jpeg" alt="Band Poster">
+      <h3>Band Poster</h3>
+      <p>₹299</p>
+      <button onclick="buyItem('Band Poster')">Buy Now</button>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery Section -->
+<section id="gallery">
+  <h2>Gallery</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="C:\\Users\\azaan\\Desktop\\College Acad\\Web Dev\\Experiments\\mus web\\l.jpeg" Performance alt="Live Show">
+      <h3>Live Show</h3>
+    </div>
+    <div class="card">
+      <img src="C:\\Users\\azaan\\Desktop\\College Acad\\Web Dev\\Experiments\\mus web\\p.jpeg" alt="Stage Performance">
+      <h3>Stage Performance</h3>
+    </div>
+    <div class="card">
+      <iframe width="220" height="130" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Band Video" frameborder="0" allowfullscreen></iframe>
+      <h3>Music Video</h3>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>Email: info@bandvibe.com</p>
+  <p>Phone: +91 9876543210</p>
+</section>
+</main>
+
+<footer>
+  <p>&copy; 2025 BandVibe. All rights reserved.</p>
+</footer>
+
+<script>
+function bookTicket(event) {
+  alert("Booking for " + event + " initiated.");
+}
+function buyItem(item) {
+  alert("Added " + item + " to cart.");
+}
+</script>
+</body>
+</html>
